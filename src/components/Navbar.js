@@ -55,6 +55,14 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link icon" data-bs-toggle="tooltip" title="Linkedin Profile" href="https://www.linkedin.com/in/harka-tamang-27b139173/"><i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link icon" data-bs-toggle="tooltip" title="Github Profile" href="https://github.com/htamang"><i class="fab fa-github"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>

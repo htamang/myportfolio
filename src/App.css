@@ -86,11 +86,7 @@ p {
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
-  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-  -webkit-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
+
 }
 
 .white-btn {
@@ -103,11 +99,7 @@ p {
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
-  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-  -webkit-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
+ 
 }
 
 .main-btn:hover {
@@ -127,18 +119,7 @@ p {
   margin: auto;
 }
 
-.learn-more{
-  display: inline-block;
-  background: var(--primary-color);
-  color: var(--white-color) !important;
-  font-size: 25px;
-  padding: 12px 36px;
-  margin-top: 20px;
-  font-weight: 400;
-  border-radius: 6px;
-  border: 2px solid var(--white-color);
-  transition: all 0.3s ease;
-}
+
 
 
 
@@ -150,15 +131,19 @@ p {
 .navigation-wrap { 
   position: fixed;
   width: 100%;
-  left: 0;
-  z-index: 1000;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
+  background-color: var(--primary-color);
 }
 
 .navigation-wrap .nav-item {
-  padding: 0 0.625rem;
-  transition: all 200ms linear;
+
+  padding:0 0.625em;
+
+}
+.navigation-wrap .nav-item .icon {
+ padding-top: 0.1rem;
+ 
+font-size: 1.5rem;
+
 }
 
 .nav-link {
@@ -188,9 +173,6 @@ p {
   left: 0;
   width: 100%;
   background: var(--primary-color);
-  
-  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
-  transition: all 0.15s ease-in-out 0s;
 }
 
 /*
@@ -207,9 +189,7 @@ p {
 }
 .home-section h1 {
   font-size: 4rem;
- 
   font-weight: 700;
-
   font-family: var(--secondry-font);
   line-height: 3rem;
 }
@@ -217,7 +197,6 @@ p {
   font-size: 3rem;
   color: var(--yellow-color);
   font-weight: 700;
-
   font-family: var(--primary-font);
 }
 .home-section h2 span {
@@ -234,18 +213,7 @@ p {
   color: var(--yellow-color);
   font-family: var(--primary-font);
 }
-.typeText {
-  color:var(--primary-color) !important;
-}
-.typeText::after {
-  content: "|";
-  animation: blink 1s infinite;
-}
 
-@keyframes blink {
-  0%, 100% {opacity: 1;}
-  50% {opacity: 0;}
-}
 
 /*
 ==========================================
