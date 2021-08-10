@@ -1,24 +1,22 @@
 import React from "react";
+
 //import Profile from "../assets/profile.jpg";
 const Home = () => {
   return (
     <section id="home">
-      <div className="container-fluid px-0 top-banner">
+      <div className="container-fluid px-0 home-section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 col-md-6">
-              <h3>Hi My Name is Harka Tamang. I am a Developer</h3>
-              <p>
-                Owners of dogs will have noticed that, if you provide them with
-                food and water and shelter and affection, they will think you
-                are god. Whereas owners of cats are compelled to realize that,
-                if you provide them with food and water and shelter and
-                affection, they draw the conclusion that they are gods
-              </p>
+            <div className="col-sm-12">
+              <h3>Hello, my name is</h3>
+              <h1>Harka Tamang</h1>
+              <h2>And I'm a Software Developer</h2>
               <div className="mt-4">
-                <button className="main-btn">
-                  Learn More <i className="fas fa-angle-right ps-3"></i>
-                </button>
+                <a href="#about">
+                  <button className="main-btn">
+                    Hire Me<i className="fas fa-angle-right ps-2"></i>
+                  </button>
+                </a>
               </div>
             </div>
           </div>

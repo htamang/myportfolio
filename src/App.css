@@ -1,15 +1,28 @@
-/**** google robot font *****/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+
+a:hover {
+  color: var(--third-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
 
 /*===== Variable Define =====*/
 :root {
-  --primary-color: #a82c48;
-  --secondry-color: #43121d;
-  --third-color: #f98169;
+  --primary-color: #0d73d1;
+  --secondry-color: #45abe6;
+  --third-color: #8674ec;
   --white-color: #fff;
-  --text-color: #555;
-  --text-gray: #999;
+  --light-blue:#3080ca;
+  --yellow-color:#ffff00;
+  --green-color:#00ff00;
   --black-color: #000;
+  --grey-color: #808080;
   --primary-font: "Roboto", sans-serif;
   --secondry-font: "Quicksand", sans-serif;
 }
@@ -23,78 +36,14 @@ body {
   font-size: 100%;
   font-weight: 400;
 }
-
-
-h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 3rem;
-  color: var(--secondry-color);
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 2.25rem;
-  text-transform: capitalize;
-  font-family: var(--secondry-font);
-  color: var(--secondry-color);
-  line-height: 3rem;
-}
-
-h4 {
-  color: var(--secondry-color);
-  font-family: var(--secondry-font);
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 800;
-  margin-bottom: 0.5rem;
-}
-
 h5 {
-  color: var(--primary-color);
+  color: var(--white-color);
   text-transform: capitalize;
   font-family: var(--secondry-font);
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-
-p {
-  font-size: 1rem;
-  color: var(--text-color);
-  font-weight: 400;
-  line-height: 1.75rem;
-  letter-spacing: 1px;
-}
-
-a:hover {
-  color: var(--third-color) !important;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-.main-btn {
-  display: inline-block;
-  padding: 0.625rem 1.875rem;
-  line-height: 1.5625rem;
-  background-color: var(--primary-color);
-  border: 0.1875rem solid var(--primary-color);
-  color: var(--white-color);
-  font-size: 0.9375rem;
-  font-weight: 600;
-  text-transform: capitalize;
-  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-  -webkit-transition: all 0.4s ease-out 0s;
-  -o-transition: all 0.4s ease-out 0s;
-  -moz-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
-}
-
-
 /*
 =========================================
     Custom Scrollbar
@@ -111,13 +60,94 @@ ol {
   background: var(--primary-color);
 }
 
+/*
+=========================================
+    Custom Css
+=========================================
+*/
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+  font-family: var(--primary-font);
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  line-height: 1.5625rem;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  border-radius: 1rem;
+  color: var(--white-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.white-btn {
+  padding: 0.625rem 1.875rem;
+  line-height: 25px;
+  background-color: var(--white-color);
+  border: 0.1875rem solid var(--white-color);
+  border-radius: 1rem;
+  color: var(--primary-color);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  -webkit-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color:transparent;
+  color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--white-color);
+  border-color: var(--white-color);
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.learn-more{
+  display: inline-block;
+  background: var(--primary-color);
+  color: var(--white-color) !important;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid var(--white-color);
+  transition: all 0.3s ease;
+}
+
+
 
 /*
 ==========================================
    Header Design
 ==========================================
 */
-.navigation-wrap {
+.navigation-wrap { 
   position: fixed;
   width: 100%;
   left: 0;
@@ -130,17 +160,12 @@ ol {
   padding: 0 0.625rem;
   transition: all 200ms linear;
 }
-.navbar-toggler:focus {
-  outline: unset;
-  border: unset;
-  box-shadow: none;
-}
 
 .nav-link {
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(--primary-color);
+  color: var(--white-color);
   letter-spacing: 1px;
 }
 
@@ -149,71 +174,128 @@ ol {
   box-shadow: none;
   margin-left: 0.625rem;
 }
+.navbar-brand {
+  color: var(--white-color);
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+}
 
 /* Change navbar styling on scroll */
-
 .navigation-wrap.scroll-on {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--white-color);
+  background: var(--primary-color);
+  
   box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
   transition: all 0.15s ease-in-out 0s;
 }
 
 /*
 ==========================================
-   top-banner Design
+   Home Section Design
 ==========================================
 */
-.top-banner {
-  background-image: url('./assets/profile.jpg') no-repeat center;
-  background-size: cover;
-  padding: 16.875rem 0 9.375rem;
-}
-img {
-  
+.home-section {
   width: 100%;
-  border-radius: 1.5rem;
+  background-image: url(../src/assets/profile.jpg);
+  background-size: cover;
+  padding: 16.875rem 0 14.5rem;
+
+}
+.home-section h1 {
+  font-size: 4rem;
+ 
+  font-weight: 700;
+
+  font-family: var(--secondry-font);
+  line-height: 3rem;
+}
+.home-section h2 {
+  font-size: 3rem;
+  color: var(--yellow-color);
+  font-weight: 700;
+
+  font-family: var(--primary-font);
+}
+.home-section h2 span {
+  font-size: 3rem;
+  font-weight: 700;
+  
+  color: var(--gre);
+  font-family: var(--primary-font);
   
 }
+.home-section h3 {
+  font-size: 1.5rem;
+
+  color: var(--yellow-color);
+  font-family: var(--primary-font);
+}
+.typeText {
+  color:var(--primary-color) !important;
+}
+.typeText::after {
+  content: "|";
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {opacity: 1;}
+  50% {opacity: 0;}
+}
+
 /*
 ==========================================
-about section Design
+   about Section Design
 ==========================================
 */
 .about-section {
-  background: var(--white-color);
+  width: 100%;
+ background-color: var(--primary-color);
+ padding: 6rem 0;
 }
-.about-section .card,
-.about-section .card img {
-    height: 30rem;
-    border-radius: 0.625rem;
+.about-section img {
+  width: 100%;
+  height: 25rem;
+  border-radius: 2rem;
 }
-.about-section .text-sec{
-    padding-left:2rem;
-  }
-
-  /*
+.about-section .txt {
+  
+  text-align: center;
+  padding-top: 7rem;
+}
+/*
 ==========================================
- food type section Design
+  skill Section Design
 ==========================================
 */
-.education{
-  padding-top:2rem;
+.skills-section {
+  width: 100%;
+  background-color: var(--white-color);
+  padding: 6rem 0;
 }
-.education ul li{
-  font-size:1rem;
-  color:var(--text-color);
-  line-height: 32px;
-  position:relative;
-  margin-left: 30px;
+.skills-section .frontend img {
+  width: 100%;
+  border-radius: 1rem;
 }
-
-.education ul li::before{
+.skills-section .framework img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.skills-section .backend img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.skills-section .database img {
+  width: 100%;
+  border-radius: 1rem;
+}
+.skills-section ul li::before{
   position:absolute;
-  left:-2.1875rem;
+  left:5rem;
   color:var(--primary-color);
   font-size: 1.25rem;
   font-family: "Font Awesome 5 Free";
@@ -222,4 +304,120 @@ about section Design
   padding-right:3px;
   vertical-align:middle;
   font-weight: 900;
+}
+
+/*
+==========================================
+  projects Section Design
+==========================================
+*/
+.projects-section {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 6rem 0;
+}
+.projects-section .card {
+border:none;
+background-color: transparent;
+border-radius: 0.9rem;
+}
+
+
+/*
+==========================================
+ testimonial section Design
+==========================================
+*/
+.wrapper {
+  padding: 6rem 0;
+}
+.testimonial-section{
+  background-color: var(--white-color);
+}
+.testimonial-section .carousel-item{ 
+  margin-top:1.7rem;
+  padding:10rem 3.125rem;
+  background-color:var(--secondry-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+.testimonial-section .carousel-caption img{
+  max-width:13rem;
+  border-radius: 50%;
+  padding:0.3125rem;
+}
+.testimonial-section .carousel-item .carousel-caption p{
+  font-size: 1.3125rem;
+  line-height: 2.0625rem;
+  padding:0 11% 0.625rem;
+}
+.testimonial-section .carousel-indicators{
+  bottom:-2.8125rem;
+}
+.testimonial-section .carousel-indicators button{
+  background-color: var(--primary-color);
+  width:15px;
+  height:15px;
+  outline:none;
+  border-radius: 50%;
+  border:none;
+  margin-right:1rem;
+  opacity:0.2;
+}
+.testimonial-section .carousel-indicators button.active{
+  opacity:1;
+}
+
+/*
+==========================================
+  contact Section Design
+==========================================
+*/
+.contact-section {
+  width: 100%;
+  background-color: var(--primary-color);
+  padding: 6rem 0;
+}
+
+.contact-section h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.contact-section .contact-content span{
+  display: inline-flex;
+  height: 65px;
+  align-items: center;
+}
+.contact-section a {
+  border: 0.1rem solid var(--white-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--white-color) ;
+}
+.contact-section a:hover{
+  background-color: var(--white-color);
+  color: var(--primary-color) !important;
+}
+.contact-section iframe{
+  border-radius: 0.5rem;
+}
+/*
+==========================================
+ Footer Section Design
+==========================================
+*/
+
+.footer-section {
+  background-color: var(--white-color);
+}
+.footer-section a{
+  color: var(--primary-color);
+}
+.footer-section a:hover{
+  text-decoration: underline;
+}
+.footer-section a i{
+  font-size: 1.5rem;
+  color:var(--primary-color);
+  padding:0 1rem;
 }
