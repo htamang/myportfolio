@@ -85,7 +85,6 @@ p {
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
-
 }
 
 .white-btn {
@@ -212,7 +211,6 @@ font-size: 1.5rem;
   color: var(--yellow-color);
   font-family: var(--primary-font);
 }
-
 
 /*
 ==========================================
