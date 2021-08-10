@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@500&family=Poppins&display=swap');
 
 a:hover {
   color: var(--third-color) !important;
@@ -23,8 +22,8 @@ ol {
   --green-color:#00ff00;
   --black-color: #000;
   --grey-color: #808080;
-  --primary-font: "Roboto", sans-serif;
-  --secondry-font: "Quicksand", sans-serif;
+  --primary-font: "Hahmlet", sans-serif;
+  --secondry-font: "Poppins", sans-serif;
 }
 
 html {
@@ -86,7 +85,6 @@ p {
   font-size: 0.9375rem;
   font-weight: 600;
   text-transform: capitalize;
-
 }
 
 .white-btn {
@@ -105,7 +103,7 @@ p {
 .main-btn:hover {
   background-color:transparent;
   color: var(--primary-color);
-  border: 0.1875rem solid var(--primary-color);
+  border: 0.1rem solid var(--primary-color);
 }
 
 .white-btn:hover {
@@ -132,6 +130,7 @@ p {
   position: fixed;
   width: 100%;
   background-color: var(--primary-color);
+  z-index: 1;
 }
 
 .navigation-wrap .nav-item {
@@ -141,7 +140,6 @@ p {
 }
 .navigation-wrap .nav-item .icon {
  padding-top: 0.1rem;
- 
 font-size: 1.5rem;
 
 }
@@ -213,7 +211,6 @@ font-size: 1.5rem;
   color: var(--yellow-color);
   font-family: var(--primary-font);
 }
-
 
 /*
 ==========================================
