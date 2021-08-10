@@ -10,7 +10,7 @@ const Home = () => {
             <div className="col-sm-12">
               <h3>Hello, my name is</h3>
               <h1>Harka Tamang</h1>
-              <h2>And I'm a Software Developer</h2>
+              <h2>And I'm The Developer You Need!</h2>
               <div className="mt-4">
                 <a href="#about">
                   <button className="main-btn">
