@@ -17,7 +17,7 @@ const About = () => {
           <div className="col-sm-6 txt">
             <h1>Harka Bahadur Tamang</h1>
             <p>
-              An IT professional looking for an entry-level role of developer
+              Junior Front End Developer l looking for an entry-level role of developer
               programmer/software developer in a company with a dynamic team
               that can help me in enhancing my technical skills and
               strengthening my knowledge.
