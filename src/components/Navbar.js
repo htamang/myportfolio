@@ -7,7 +7,7 @@ const Navbar = () => {
     <header>
       <nav className="navbar navbar-expand-lg navigation-wrap">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="#home">
             <h1>
               Portfo<span style={{ color: "black" }}>lio.</span>
             </h1>

@@ -11,7 +11,7 @@ const Home = () => {
               <h3>Hello, my name is</h3>
               <h1>Harka Tamang</h1>
               <h2>And I'm The Developer You Need!</h2>
-              <div className="mt-4">
+              <div className="mt-1 txt">
                 <a href="#about">
                   <button className="main-btn">
                     Hire Me<i className="fas fa-angle-right ps-2"></i>
