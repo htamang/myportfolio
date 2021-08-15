@@ -127,7 +127,7 @@ p {
 ==========================================
 */
 .navigation-wrap { 
-  position: fixed;
+  position: fixed !important;
   width: 100%;
   background-color: var(--primary-color);
   z-index: 1;
