@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import * as reactIcons from 'react-icons/fa'
-
+import * as fontAwesome from 'react-icons/fa'
 const Navbar = () => {
   return (
     <header>
@@ -21,7 +20,7 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-           <reactIcons.FaBars />
+           <fontAwesome.FaBars />
           </button>
           <div className="collapse navbar-collapse navbar-text" id="navbarText">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -56,11 +55,11 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link icon" data-bs-toggle="tooltip" title="Linkedin Profile" href="https://www.linkedin.com/in/harka-tamang-27b139173/"><reactIcons.FaLinkedin />
+                <a className="nav-link icon" data-bs-toggle="tooltip" title="Linkedin Profile" href="https://www.linkedin.com/in/harka-tamang-27b139173/"><fontAwesome.FaLinkedinIn />
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link icon" data-bs-toggle="tooltip" title="Github Profile" href="https://github.com/htamang"><reactIcons.FaGithub />
+                <a className="nav-link icon" data-bs-toggle="tooltip" title="Github Profile" href="https://github.com/htamang"><fontAwesome.FaGithub />
                 </a>
               </li>
             </ul>

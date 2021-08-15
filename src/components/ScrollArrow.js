@@ -1,0 +1,54 @@
+import React, { useState, useEffect } from "react";
+import "../App.css";
+import { FaAngleUp } from "react-icons/fa";
+
+const ScrollArrow = () => {
+  //state of ScrollArrow
+  const [showScroll, setShowScroll] = useState(false);
+
+  //adding and removing scroll event effect
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop);
+    window.addEventListener("scroll", checkNavScroll);
+    return function cleanup() {
+      window.removeEventListener("scroll", checkScrollTop);
+      window.removeEventListener("scroll", checkNavScroll);
+    };
+  });
+  
+
+  //checks for scroll and if yes checks height of the page as pageY
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400) {
+      setShowScroll(false);
+    }
+  };
+
+  const checkNavScroll = () => {
+    if (!showScroll && window.pageYOffset > 20) {
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 20) {
+      setShowScroll(false);
+    }
+
+  };
+
+  //scroll to Top
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <div>
+      <FaAngleUp
+        className="scrollTop"
+        onClick={scrollTop}
+        style={{ height: 60, display: showScroll ? "flex" : "none" }}
+      />
+    </div>
+  );
+};
+
+export default ScrollArrow;
