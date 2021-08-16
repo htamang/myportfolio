@@ -1,4 +1,5 @@
 import React from "react";
+import * as fontAwesome from 'react-icons/fa'
 import frontend from '../assets/front-end.jpg';
 import backend from '../assets/back-end.jpg';
 import framework from '../assets/framework.jpg'
@@ -15,9 +16,9 @@ const Skills = () => {
                 <h1>Front End</h1>
                 <img src={frontend} alt="frontend" />
                 <ul className="list-unstyled py-3">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
+                  <li> <fontAwesome.FaCheck />HTML</li>
+                  <li> <fontAwesome.FaCheck />CSS</li>
+                  <li> <fontAwesome.FaCheck />Javascript</li>
                 </ul>
               </div>
             </div>
@@ -26,9 +27,9 @@ const Skills = () => {
                 <h1>Framework</h1>
                 <img src={framework} alt="framework" />
                 <ul className="list-unstyled py-3">
-                  <li>Bootstrap</li>
-                  <li>JQuery</li>
-                  <li>React</li>
+                  <li><fontAwesome.FaCheck />Bootstrap</li>
+                  <li><fontAwesome.FaCheck />JQuery</li>
+                  <li><fontAwesome.FaCheck />React</li>
                 </ul>
               </div>
             </div>
@@ -38,9 +39,9 @@ const Skills = () => {
                 <h1>Back End</h1>
                 <img src={backend} alt="backend" />
                 <ul className="list-unstyled py-3">
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>Python</li>
+                  <li><fontAwesome.FaCheck />Node.js</li>
+                  <li><fontAwesome.FaCheck />Express.js</li>
+                  <li><fontAwesome.FaCheck />Python</li>
                 </ul>
               </div>
             </div>
@@ -49,9 +50,9 @@ const Skills = () => {
                 <h1>Database</h1>
                 <img src={database} alt="database" />
                 <ul className="list-unstyled py-3">
-                  <li>MySQL</li>
-                  <li>PostgreSQL</li>
-                  <li>MongoDB</li>
+                  <li><fontAwesome.FaCheck />MySQL</li>
+                  <li><fontAwesome.FaCheck />PostgreSQL</li>
+                  <li><fontAwesome.FaCheck />MongoDB</li>
                 </ul>
               </div>
             </div>

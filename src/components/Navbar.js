@@ -1,10 +1,32 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React,{useState,useEffect} from "react";
+
 import * as fontAwesome from 'react-icons/fa'
 const Navbar = () => {
+  const [navBarScroll, setNavBarScroll] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", navBackgroundChange);
+    
+    return function cleanup() {
+      window.removeEventListener("scroll", navBackgroundChange);
+      
+    };
+  });
+
+  const navBackgroundChange = () => {
+    if (window.scrollY >= 80) {
+      setNavBarScroll(true);
+    } else  {
+      setNavBarScroll(false);
+    }
+  };
+
+  //window.addEventListener('scroll', navBackgroundChange);
+
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navigation-wrap">
+      <nav className={navBarScroll ? 'navbar navbar-expand-lg navigation-wrap active' :'navbar navbar-expand-lg navigation-wrap'}>
         <div className="container">
           <a className="navbar-brand" href="#home">
             <h1>

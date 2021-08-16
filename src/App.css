@@ -147,7 +147,7 @@ p {
 .navigation-wrap { 
   position: fixed !important;
   width: 100%;
-  background-color: var(--primary-color);
+  height: 5rem;
   z-index: 1;
 }
 
@@ -180,10 +180,8 @@ p {
 }
 
 /* Change navbar styling on scroll */
-.navigation-wrap.scroll-on {
+.navigation-wrap.active {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background: var(--primary-color);
 }
@@ -272,18 +270,7 @@ p {
   width: 100%;
   border-radius: 1rem;
 }
-.skills-section ul li::before{
-  position:absolute;
-  left:5rem;
-  color:var(--primary-color);
-  font-size: 1.25rem;
-  font-family: "Font Awesome 5 Free";
-  content:'\f00c';
-  display:inline-block;
-  padding-right:3px;
-  vertical-align:middle;
-  font-weight: 900;
-}
+
 
 /*
 ==========================================

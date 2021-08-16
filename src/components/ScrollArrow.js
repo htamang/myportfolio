@@ -9,10 +9,10 @@ const ScrollArrow = () => {
   //adding and removing scroll event effect
   useEffect(() => {
     window.addEventListener("scroll", checkScrollTop);
-    window.addEventListener("scroll", checkNavScroll);
+    
     return function cleanup() {
       window.removeEventListener("scroll", checkScrollTop);
-      window.removeEventListener("scroll", checkNavScroll);
+      
     };
   });
   
@@ -25,15 +25,17 @@ const ScrollArrow = () => {
       setShowScroll(false);
     }
   };
+  // window.addEventListener("scroll", checkScrollTop);
 
   const checkNavScroll = () => {
-    if (!showScroll && window.pageYOffset > 20) {
+    if (!showScroll && window.pageYOffset >= 20) {
       setShowScroll(true);
     } else if (showScroll && window.pageYOffset <= 20) {
       setShowScroll(false);
     }
 
   };
+  window.addEventListener("scroll", checkNavScroll);
 
   //scroll to Top
   const scrollTop = () => {
