@@ -40,7 +40,6 @@ const Skills = () => {
                 <img src={backend} alt="backend" />
                 <ul className="list-unstyled py-3">
                   <li><fontAwesome.FaCheck />Node.js</li>
-                  <li><fontAwesome.FaCheck />Express.js</li>
                   <li><fontAwesome.FaCheck />Python</li>
                 </ul>
               </div>
