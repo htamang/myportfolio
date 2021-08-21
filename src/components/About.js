@@ -4,6 +4,7 @@ import React from "react";
 //import Profile from "../assets/profile.jpg";
 import htamang from "../assets/htamang.jpg";
 import resume from "../assets/harka-resume.docx";
+import * as fontAwesome from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
               <div className="mt-4">
                 <a href={resume}>
                   <button className="white-btn">
-                    View Resume<i className="fas fa-angle-right ps-2"></i>
+                    View Resume<fontAwesome.FaChevronRight/>
                   </button>
                 </a>
               </div>

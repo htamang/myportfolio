@@ -1,4 +1,5 @@
 import React from "react";
+import * as fontAwesome from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
               <div className="mt-1 txt">
                 <a href="#about">
                   <button className="main-btn">
-                    Hire Me<i className="fas fa-angle-right ps-2"></i>
+                    Hire Me<fontAwesome.FaChevronRight />
                   </button>
                 </a>
               </div>
