@@ -283,9 +283,9 @@ p {
   padding: 6rem 0;
 }
 .projects-section .card {
-border:none;
-background-color: transparent;
-border-radius: 0.9rem;
+  border:none;
+  background-color: transparent;
+  border-radius: 0.9rem;
 }
 
 

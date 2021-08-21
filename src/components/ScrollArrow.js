@@ -47,7 +47,7 @@ const ScrollArrow = () => {
       <FaAngleUp
         className="scrollTop"
         onClick={scrollTop}
-        style={{ height: 60, display: showScroll ? "flex" : "none" }}
+        style={{ height: 30, display: showScroll ? "flex" : "none" }}
       />
     </div>
   );
