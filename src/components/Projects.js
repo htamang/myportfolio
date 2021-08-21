@@ -1,4 +1,5 @@
 import React from "react";
+import * as fontAwesome from 'react-icons/fa'
 
 const Projects = () => {
   return (
@@ -9,10 +10,7 @@ const Projects = () => {
             <div class="card col-sm-4 mb-5">
               <h1>Quizz</h1>
               <p>
-                An IT professional looking for an entry-level role of developer
-                programmer/software developer in a company with a dynamic team
-                that can help me in enhancing my technical skills and
-                strengthening my knowledge.
+              Site is under construction!!!
               </p>
 
               {/* <a class="learn-more" href="#">Demo</a>
@@ -20,17 +18,14 @@ const Projects = () => {
 
               <div class="mt-4">
                 <button class="white-btn">
-                  Demo<i class="fas fa-angle-right ps-2"></i>
+                  Demo<fontAwesome.FaChevronRight/>
                 </button>
               </div>
             </div>
             <div class="card col-sm-4 mb-5">
               <h1>Weather App</h1>
               <p>
-                An IT professional looking for an entry-level role of developer
-                programmer/software developer in a company with a dynamic team
-                that can help me in enhancing my technical skills and
-                strengthening my knowledge.
+                Site is under construction!!!
               </p>
 
               {/* <!--
@@ -39,17 +34,14 @@ const Projects = () => {
                   --> */}
               <div class="mt-4">
                 <button class="white-btn">
-                  Demo<i class="fas fa-angle-right ps-2"></i>
+                  Demo<fontAwesome.FaChevronRight/>
                 </button>
               </div>
             </div>
             <div class="card col-sm-4 mb-5">
               <h1>Restaurant</h1>
               <p>
-                An IT professional looking for an entry-level role of developer
-                programmer/software developer in a company with a dynamic team
-                that can help me in enhancing my technical skills and
-                strengthening my knowledge.
+              Site is under construction!!!
               </p>
               {/* <!--
                     <a class="learn-more" href="#">Demo</a>
@@ -57,23 +49,20 @@ const Projects = () => {
                   --> */}
               <div class="mt-4">
                 <button class="white-btn">
-                  Demo<i class="fas fa-angle-right ps-2"></i>
+                  Demo<fontAwesome.FaChevronRight/>
                 </button>
               </div>
             </div>
             <div class="card col-sm-4 mb-5">
               <h1>Face Recognition</h1>
               <p>
-                An IT professional looking for an entry-level role of developer
-                programmer/software developer in a company with a dynamic team
-                that can help me in enhancing my technical skills and
-                strengthening my knowledge.
+              Site is under construction!!!
               </p>
               {/* <!-- <a class="learn-more" href="#">Demo</a> 
                 <a class="learn-more" href="#">Code</a> --> */}
               <div class="mt-4">
                 <button class="white-btn">
-                  Demo<i class="fas fa-angle-right ps-2"></i>
+                  Demo<fontAwesome.FaChevronRight/>
                 </button>
               </div>
             </div>
