@@ -8,9 +8,8 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12">
-              <h3>Hi, my name is</h3>
               <h1>Harka Tamang</h1>
-              <h2>And I'm The Developer You Need!</h2>
+              <h2>I'm The Developer You Need!</h2>
               <div className="mt-1 txt">
                 <a href="#about">
                   <button className="main-btn">
