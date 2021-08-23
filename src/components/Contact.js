@@ -8,12 +8,12 @@ const Contact = () => {
       <div className="container-fluid px-0 contact-section">
         <div className="container">
           <div className="row">
-            <div className="col-sm-12 text-center">
+            <div className="col-md-12 text-center">
               <h1 className="title">Contact me</h1>
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-6 text-center">
+            <div className="col-md-6 text-center">
               <h1>Get in Touch</h1>
               <div className="contact-content">
                 <fontAwesome.FaUser />

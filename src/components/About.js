@@ -12,16 +12,15 @@ const About = () => {
       <div className="container-fluid px-0 about-section">
         <div className="container">
           <div className="row">
-            <div className="col-sm-6">
+            <div className="col-md-6">
               <img src={htamang} alt="profile-pic" />
             </div>
-            <div className="col-sm-6 txt">
+            <div className="col-md-6 txt">
               <h1>Harka Bahadur Tamang</h1>
               <p>
                 Junior Front End Developer l looking for an entry-level role of
                 developer programmer/software developer in a company with a
-                dynamic team that can help me in enhancing my technical skills
-                and strengthening my knowledge.
+                dynamic team that.
               </p>
               <div className="mt-4">
                 <a href={resume}>
